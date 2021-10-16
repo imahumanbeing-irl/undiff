@@ -19,3 +19,4 @@ Examples:
          undiff st-xresources.diff > just-use-terminal-dot-sexy.diff"
 
 FILE_MISSING="'$1' does not exist."
+
