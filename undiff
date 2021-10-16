@@ -1,6 +1,6 @@
 #!/bin/sh
-[ $# -eq 0 ] && { echo -e "No arguments passed.\nTry 'undiff -h' for help." && exit ; }
-[ $1 == "--help" ] || [ $1 == "-h" ] && { echo -e "Usage: undiff [DIFF_FILE]\nCleanse your filthy suckless programs.\n\nOptions:\n\t-h  --help  display this help and exit\n\nExamples:\n\tundiff dwm-fullgaps-6.2.diff > bye-bye-fullgaps.diff\n\tundiff st-xresources.diff > just-use-terminal-dot-sexy.diff" && exit ; }
-[ $(echo "$1" | cut -c1-1) == "-" ] && { echo -e "Invalid option '$1'.\nUndiff has no options other than '--help' and '-h'." && exit ; }
-[ -f $1 ] || { echo "'$1' does not exist." && exit ; }
-interdiff -q "$1" /dev/null 2> /dev/null || echo -e "Invalid usage.\nTry 'undiff -h' for help."
+[ $# -eq 0 ] && { echo "$NO_ARGUMENTS_PASSED" && exit ; }
+[ $1 == "--help" ] || [ $1 == "-h" ] && { echo "$HELP" && exit ; }
+[ $(echo "$1" | cut -c1-1) == "-" ] && { echo "$INVALID_OPTION" && exit ; }
+[ -f $1 ] || { echo "$FILE_MISSING" && exit ; }
+interdiff -q "$1" /dev/null 2> /dev/null || echo "$INVALID_USAGE"

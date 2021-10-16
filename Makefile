@@ -1,5 +1,5 @@
 install:
-	chmod +x undiff
 	mkdir -p /usr/bin/
-	cp -f undiff /usr/bin/
+	cat data undiff > /usr/bin/undiff
+	chmod +x /usr/bin/undiff 
 
