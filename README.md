@@ -5,7 +5,7 @@ easier than doing
 ```
 interdiff -q st-generic-patch.diff /dev/null > reversed.diff
 ```
-just a little time saving
+just some humble keystroke saving
 
 ## removing patches
 let's say i want to get rid of fullgaps (dwm patch)
