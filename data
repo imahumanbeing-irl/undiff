@@ -1,0 +1,21 @@
+#!/bin/sh
+NO_ARGUMENTS_PASSED="No arguments passed.
+Try 'undiff -h' for help."
+
+INVALID_OPTION="Invalid option '$1'.
+Undiff has no options other than '--help' and '-h'."
+
+INVALID_USAGE="Invalid usage.
+Try 'undiff -h' for help."
+
+HELP="Usage: undiff [DIFF_FILE]
+Cleanse your filthy suckless programs.
+
+Options:
+        -h  --help  display this help and exit
+
+Examples:
+         undiff dwm-fullgaps-6.2.diff > bye-bye-fullgaps.diff
+         undiff st-xresources.diff > just-use-terminal-dot-sexy.diff"
+
+FILE_MISSING="'$1' does not exist."
