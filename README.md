@@ -3,7 +3,7 @@ reverse a .diff file (useful for removing patches)
 
 easier than doing
 ```
-interdiff -q normal.diff /dev/null > reversed.diff
+interdiff -q st-generic-patch.diff /dev/null > reversed.diff
 ```
 just a little time saving
 
