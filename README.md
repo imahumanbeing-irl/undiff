@@ -1,7 +1,7 @@
 # undiff
 reverse a .diff file (useful for removing patches)
 
-easier than doing
+easier than running
 ```
 interdiff -q st-generic-patch.diff /dev/null > reversed.diff
 ```
